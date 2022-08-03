@@ -10,6 +10,7 @@ steps:
   inputs:
     mavenPomFile: 'app/pom.xml'
     codeCoverageToolOption: Cobertura
+    goals: 'package'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
